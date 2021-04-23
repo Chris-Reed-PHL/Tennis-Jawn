@@ -126,8 +126,10 @@ export default {
 
 <style>
 .score-board {
-  margin: 50px auto;
+  /* margin: 50% auto; */
   display: grid;
+  width: 100%;
+  height: auto;
 
   grid-template-areas:
     "head head"
@@ -144,7 +146,7 @@ export default {
   border: #f2f2f2;
   border-style: groove;
   background-color: bisque;
-  width: 50%;
+  width: 25vw;
   height: 100%;
 }
 .team-two-score {
@@ -154,7 +156,7 @@ export default {
   border: #f2f2f2;
   border-style: groove;
   background-color: bisque;
-  width: 50%;
+  width: 25vw;
   height: 100%;
 }
 .team-one-button {
@@ -176,7 +178,7 @@ h1 {
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
-  margin: 25%;
+  margin: 5% 20% 20% 20%;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;

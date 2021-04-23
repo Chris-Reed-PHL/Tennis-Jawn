@@ -18,21 +18,22 @@ export default {
 <style>
 .app {
   display: flex;
+  flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10px;
   background-color: rgb(117, 211, 117);
   background-image: url("~@/assets/tennis-court.jpeg");
   background-size: cover;
   align-items: center;
   justify-content: stretch;
-  height: 100vh;
+  width: 100%;
+  height: 100vmax;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
