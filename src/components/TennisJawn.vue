@@ -126,16 +126,16 @@ export default {
 
 <style>
 .score-board {
-  /* margin: 50% auto; */
   display: grid;
   width: 100%;
   height: auto;
 
   grid-template-areas:
     "head head"
+    "reset reset"
     "score1 score2"
-    "button1 button2"
-    "reset reset";
+    "button1 button2";
+
   justify-items: center;
   text-align: center;
 }
@@ -143,21 +143,29 @@ export default {
   grid-area: score1;
   justify-items: center;
   text-align: center;
-  border: #f2f2f2;
-  border-style: groove;
-  background-color: bisque;
+  /* border: #f2f2f2;
+  border-style: groove; */
+  color: rgb(173, 9, 151);
   width: 25vw;
   height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 50px;
 }
 .team-two-score {
   grid-area: score2;
   justify-items: center;
   text-align: center;
-  border: #f2f2f2;
-  border-style: groove;
-  background-color: bisque;
+  /* border: #f2f2f2;
+  border-style: groove; */
+  color: rgb(173, 9, 151);
   width: 25vw;
   height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 50px;
 }
 .team-one-button {
   grid-area: button1;
@@ -167,14 +175,15 @@ export default {
 }
 .reset {
   grid-area: reset;
-  width: 50%;
+  width: 25%;
   color: bisque;
+  margin: 0%;
 }
 h1 {
   grid-area: head;
   background: #f2f2f2;
   color: #4b86a6;
-  padding: 25px;
+  padding: 5%;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
