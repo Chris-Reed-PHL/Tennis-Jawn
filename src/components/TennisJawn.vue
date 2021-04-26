@@ -125,7 +125,7 @@ export default {
 </script>
 
 <style>
-.score-board {
+/* .score-board {
   display: grid;
   width: 100%;
   height: auto;
@@ -143,10 +143,10 @@ export default {
   grid-area: score1;
   justify-items: center;
   text-align: center;
-  /* border: #f2f2f2;
-  border-style: groove; */
+  border: #f2f2f2;
+  border-style: groove;
   color: rgb(173, 9, 151);
-  width: 25vw;
+  width: 25px;
   height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-style: oblique;
@@ -157,10 +157,10 @@ export default {
   grid-area: score2;
   justify-items: center;
   text-align: center;
-  /* border: #f2f2f2;
-  border-style: groove; */
+  border: #f2f2f2;
+  border-style: groove;
   color: rgb(173, 9, 151);
-  width: 25vw;
+  width: 25px;
   height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-style: oblique;
@@ -187,7 +187,101 @@ h1 {
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
-  margin: 5% 20% 20% 20%;
+  margin: 5%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+button {
+  color: #4b86a6;
+  padding: 50px 50px;
+  background-color: yellowgreen;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: relative;
+  margin: 10%;
+  font-style: italic;
+  font-weight: bold;
+} */
+</style>
+<style>
+.score-board {
+  margin: 50px auto;
+  display: grid;
+
+  grid-template-areas:
+    "head head"
+    "reset reset"
+    "score1 score2"
+    "button1 button2";
+
+  justify-items: center;
+  text-align: center;
+}
+/* .team-one-score {
+  grid-area: score1;
+  justify-items: center;
+  text-align: center;
+  border: #f2f2f2;
+  border-style: groove;
+  background-color: bisque;
+  width: 50%;
+  height: 100%;
+  margin: 10%;
+} */
+
+.team-one-score {
+  grid-area: score1;
+  justify-items: center;
+  text-align: center;
+  border-style: groove;
+  color: rgb(173, 9, 151);
+  background-color: bisque;
+  border: #f2f2f2;
+  width: 50%;
+  height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+.team-two-score {
+  grid-area: score2;
+  justify-items: center;
+  text-align: center;
+  border-style: groove;
+  color: rgb(173, 9, 151);
+  background-color: bisque;
+  border: #f2f2f2;
+  width: 50%;
+  height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+.team-one-button {
+  grid-area: button1;
+}
+.team-two-button {
+  grid-area: button2;
+}
+.reset {
+  grid-area: reset;
+  width: 50%;
+  color: bisque;
+}
+h1 {
+  grid-area: head;
+  background: #f2f2f2;
+  color: #4b86a6;
+  padding: 25px;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10%;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;

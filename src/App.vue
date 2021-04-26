@@ -29,8 +29,8 @@ export default {
   background-size: cover;
   align-items: center;
   justify-content: stretch;
-  width: 100%;
-  height: 100vmax;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
